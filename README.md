@@ -1,8 +1,6 @@
 # UselessBox
 
-This is a project which uses a stepper motor and metal servo to achieve a multi-switch Useless Box.
-This particular version is set up for 15 switches, but more can easily be added.
-This is code intended to be run on an Arduino Mega.
+This is a project which uses a stepper motor and metal servo to achieve a multi-switch Useless Box. It is set up for 15 switches, but more can easily be added (or removed). The included sketch is designed for an Arduino Mega (more pins), but with fewer switches can be adapted to other arduinos.
 
 ## Order of Action
 - Wait for servo control pin to broadcast properly
@@ -13,7 +11,7 @@ This is code intended to be run on an Arduino Mega.
 - When home click is found, set stepper position to zero
 - Set stepper to full speed with acceleration
   
-#### BEGIN LOOP
+##### BEGIN LOOP
   
 - Decide on a destination: poll each switch for state and distance from current position, choose closest. If no switch, go to rest.
 - Travel to distination (blocking)
