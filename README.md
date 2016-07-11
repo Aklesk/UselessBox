@@ -4,7 +4,7 @@ This is a project which uses a stepper motor and metal servo to achieve a multi-
 This particular version is set up for 15 switches, but more can easily be added.
 This is code intended to be run on an Arduino Mega.
 
-Order of action:
+# Order of Action
   Wait for servo control pin to broadcast properly
   Activate power to the servo
   Reset servo position
@@ -22,7 +22,7 @@ Order of action:
   If servo reaches maximum extent without switch turning off, reset servo and re-home
   Loop back to beginning.
 
-Physical electronics:
+# Physical Electronics
   Arduino Mega
   Easy Driver Stepper Driver
   Nema17 Stepper Motor
@@ -31,11 +31,11 @@ Physical electronics:
   12V external power supply
   One Transistor
 
-Required libraries:
+# Required libraries
   AccelStepper.h
   Servo.h
   
-Pin assignments:
+# Pin assignments
   Pin 6: Servo control pin
   Pin 10: Pin connected to a transistor controlling power to the 5V supply (Servo moves randomly during intialization if powered) 
   Pin 11: Home switch to find stepper position - shorted to ground when switch is activated
